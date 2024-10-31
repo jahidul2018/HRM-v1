@@ -1,0 +1,83 @@
+Detailed Module Descriptions
+
+1. Config
+database.js: Configures MongoDB connection.
+roles.js: Manages role-based permissions for access control.
+
+2. Controllers
+Each controller manages requests for its respective module.
+
+authController.js: Manages user authentication, including login and registration.
+employeeController.js: Manages employee data, including CRUD and payroll integration.
+payrollController.js: Calculates and processes payroll based on attendance and designation.
+attendanceController.js: Tracks employee attendance, including check-in, check-out, and reports.
+departmentController.js: Manages departments and assigns employees to departments.
+leaveController.js: Handles leave requests, approval, and leave balances.
+postController.js: Manages employee posts for sharing updates.
+teamController.js: Handles team creation, assignments, and viewing team structures.
+commentController.js: Manages comments on posts for internal discussions.
+designationController.js: Manages designations with base salary, provident fund, bonuses, etc.
+noticeController.js: Handles creation, viewing, and deletion of notices for the notice board.
+
+3. Middlewares
+authMiddleware.js: Secures routes with authentication and role-based authorization.
+errorHandler.js: A global error handler for handling exceptions and sending responses.
+
+4. Models
+Each model represents a MongoDB schema for storing and managing data.
+
+userModel.js: Defines the User schema.
+employeeModel.js: Stores employee information, including linked designation and department.
+payrollModel.js: Holds payroll records for each employee, calculated monthly.
+attendanceModel.js: Stores daily attendance data, including check-in and check-out times.
+departmentModel.js: Defines departments and associates them with employees.
+leaveModel.js: Manages employee leave requests, status, and types of leave.
+postModel.js: Defines posts created by employees for internal communication.
+teamModel.js: Stores team structures and assigned employees.
+commentModel.js: Stores comments linked to posts for employee interaction.
+designationModel.js: Stores designation-specific salary, provident fund, bonus, and overtime rates.
+noticeModel.js: Stores notices for the notice board with title, description, expiry, and more.
+
+5. Routes
+Each controller has a corresponding route file that defines its endpoints.
+
+authRoutes.js: Routes for login and registration.
+employeeRoutes.js: Routes for managing employees.
+payrollRoutes.js: Routes for payroll processing.
+attendanceRoutes.js: Routes for attendance tracking.
+departmentRoutes.js: Routes for managing departments.
+leaveRoutes.js: Routes for leave management.
+postRoutes.js: Routes for managing posts.
+teamRoutes.js: Routes for team management.
+commentRoutes.js: Routes for comments on posts.
+designationRoutes.js: Routes for managing designations.
+noticeRoutes.js: Routes for creating, viewing, and deleting notices.
+
+6. Services
+Each service contains business logic specific to each module, ensuring modular and maintainable code.
+
+authService.js: Manages authentication logic.
+employeeService.js: Manages employee-related logic.
+payrollService.js: Processes payroll, integrating with attendance and designation.
+attendanceService.js: Tracks and reports attendance.
+departmentService.js: Manages CRUD operations for departments.
+leaveService.js: Manages leave requests and approvals.
+postService.js: Manages CRUD operations for posts.
+teamService.js: Handles team structure and assignments.
+commentService.js: Manages comments on posts.
+designationService.js: Manages CRUD operations for designations.
+noticeService.js: Manages CRUD operations for notices.
+
+7. Utilities
+logger.js (optional): Configures logging to capture and store logs for debugging or auditing.
+
+Summary
+This final structure organizes all components of the HRM System to provide a comprehensive solution with features like:
+
+Employee, Team, and Department management
+Attendance tracking with payroll integration
+Leave management with approval workflows
+Notice board for company-wide announcements
+Designation-based salary, bonuses, and benefits
+Post and Comment modules for internal communications
+This structure provides a robust framework for managing various aspects of HRM, with a modular approach that supports future scalability. Let me know if you need further adjustments or have questions about specific modules!

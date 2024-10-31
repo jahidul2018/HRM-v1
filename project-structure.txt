@@ -1,0 +1,112 @@
+Project Structure
+project-root/
+├── src/
+│   ├── config/
+│   │   ├── db.js                     # Database connection configuration
+│   │   ├── env.js                    # Environment variables loader
+│   │   └── logger.js                 # Logger configuration
+│   │
+│   ├── controllers/
+│   │   ├── authController.js         # Handles authentication, login, and 2FA
+│   │   ├── commentController.js      # Handles comments on posts or announcements
+│   │   ├── complianceController.js   # Manages compliance records and policy acknowledgments
+│   │   ├── documentController.js     # Manages employee documents and access control
+│   │   ├── employeeController.js     # Manages employee data, including emergency contacts
+│   │   ├── feedbackController.js     # Manages employee feedback submissions
+│   │   ├── healthCheckinController.js# Handles health check-in submissions
+│   │   ├── leaveRequestController.js # Manages employee leave requests
+│   │   ├── notificationController.js # Handles notifications and alerts
+│   │   ├── payrollController.js      # Manages payroll calculations and processing
+│   │   ├── profileController.js      # Manages employee profile updates
+│   │   ├── projectController.js      # Manages project assignments and details
+│   │   ├── responseController.js     # Handles survey and poll responses
+│   │   ├── surveyController.js       # Manages creation and distribution of surveys and polls
+│   │   ├── teamController.js         # Manages team and department assignments
+│   │   ├── timesheetController.js    # Handles time tracking and timesheet entries
+│   │   ├── wellnessController.js     # Manages wellness programs and participant registrations
+│   │   └── reportingController.js    # Generates reports and analytics
+│   │
+│   ├── integrations/
+│   │   ├── slackIntegration.js       # Slack integration for notifications
+│   │   ├── calendarIntegration.js    # Google Calendar integration for events
+│   │   ├── payrollIntegration.js     # Integration with an external payroll system
+│   │
+│   ├── middlewares/
+│   │   ├── authMiddleware.js         # Authentication, authorization, and RBAC middleware
+│   │   ├── errorMiddleware.js        # Custom error handling middleware
+│   │
+│   ├── models/
+│   │   ├── attendanceModel.js        # Model for attendance tracking
+│   │   ├── commentModel.js           # Model for comments
+│   │   ├── complianceModel.js        # Model for policy acknowledgment and audit logs
+│   │   ├── departmentModel.js        # Model for departments
+│   │   ├── designationModel.js       # Model for employee designations and roles
+│   │   ├── documentModel.js          # Model for employee documents
+│   │   ├── employeeModel.js          # Model for employee data
+│   │   ├── expenseModel.js           # Model for expense reimbursements
+│   │   ├── feedbackModel.js          # Model for feedback submissions
+│   │   ├── healthCheckinModel.js     # Model for health check-ins
+│   │   ├── leaveRequestModel.js      # Model for leave requests
+│   │   ├── notificationModel.js      # Model for notifications
+│   │   ├── payrollModel.js           # Model for payroll data
+│   │   ├── postModel.js              # Model for posts or announcements
+│   │   ├── projectModel.js           # Model for project assignments and details
+│   │   ├── responseModel.js          # Model for survey and poll responses
+│   │   ├── surveyModel.js            # Model for surveys and polls
+│   │   ├── teamModel.js              # Model for teams
+│   │   ├── timesheetModel.js         # Model for time tracking and timesheets
+│   │   └── wellnessProgramModel.js   # Model for wellness programs
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js             # Routes for authentication and login
+│   │   ├── commentRoutes.js          # Routes for comments
+│   │   ├── complianceRoutes.js       # Routes for compliance management
+│   │   ├── documentRoutes.js         # Routes for document access
+│   │   ├── employeeRoutes.js         # Routes for employee-related operations
+│   │   ├── feedbackRoutes.js         # Routes for feedback submissions
+│   │   ├── healthCheckinRoutes.js    # Routes for health check-ins
+│   │   ├── leaveRequestRoutes.js     # Routes for leave requests
+│   │   ├── notificationRoutes.js     # Routes for notifications and alerts
+│   │   ├── payrollRoutes.js          # Routes for payroll processing
+│   │   ├── profileRoutes.js          # Routes for employee profile management
+│   │   ├── projectRoutes.js          # Routes for project management
+│   │   ├── responseRoutes.js         # Routes for survey responses
+│   │   ├── surveyRoutes.js           # Routes for surveys and polls
+│   │   ├── teamRoutes.js             # Routes for team and department management
+│   │   ├── timesheetRoutes.js        # Routes for time tracking and timesheets
+│   │   ├── wellnessRoutes.js         # Routes for wellness program management
+│   │   └── reportingRoutes.js        # Routes for reporting and analytics
+│   │
+│   ├── services/
+│   │   ├── authService.js            # Service for managing authentication, including 2FA
+│   │   ├── commentService.js         # Service for comments management
+│   │   ├── complianceService.js      # Service for compliance management
+│   │   ├── documentService.js        # Service for document management
+│   │   ├── employeeService.js        # Service for employee data and profile management
+│   │   ├── expenseService.js         # Service for managing expenses
+│   │   ├── feedbackService.js        # Service for managing feedback
+│   │   ├── healthCheckinService.js   # Service for health check-ins
+│   │   ├── leaveRequestService.js    # Service for leave request management
+│   │   ├── notificationService.js    # Service for notifications
+│   │   ├── payrollService.js         # Service for payroll calculations
+│   │   ├── profileService.js         # Service for profile updates
+│   │   ├── projectService.js         # Service for project management
+│   │   ├── reportingService.js       # Service for generating reports and analytics
+│   │   ├── responseService.js        # Service for survey responses
+│   │   ├── surveyService.js          # Service for surveys and polls
+│   │   ├── teamService.js            # Service for team and department management
+│   │   ├── timesheetService.js       # Service for time tracking
+│   │   └── wellnessService.js        # Service for wellness program management
+│   │
+│   ├── utils/
+│   │   ├── errorHandler.js           # Custom error handler utility
+│   │   ├── tokenUtils.js             # Utility functions for token generation and validation
+│   │   └── validator.js              # Input validation functions
+│   │
+│   ├── app.js                        # Main Express app setup
+│   └── server.js                     # Server setup and starting point
+│
+├── .env                              # Environment variables
+├── .gitignore                        # Git ignore file
+├── package.json                      # Project dependencies and scripts
+└── README.md                         # Project documentation
