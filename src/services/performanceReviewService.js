@@ -29,7 +29,6 @@ exports.deletePerformanceReview = async (reviewId) => {
 };
 
 // new //
-const PerformanceReview = require("../models/performanceReviewModel");
 
 exports.createPerformanceReview = async (reviewData) => {
 	const review = new PerformanceReview(reviewData);

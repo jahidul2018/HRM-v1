@@ -1,5 +1,6 @@
 // commentController.js
 const commentService = require("../services/commentService");
+const asyncHandler = require("express-async-handler");
 exports.createComment = asyncHandler(async (req, res) => {
 	const comment = await commentService.createComment({
 		...req.body,

@@ -1,5 +1,6 @@
 // postController.js
 const postService = require("../services/postService");
+const asyncHandler = require("express-async-handler");
 exports.createPost = asyncHandler(async (req, res) => {
 	const post = await postService.createPost({
 		...req.body,

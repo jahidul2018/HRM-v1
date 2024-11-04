@@ -4,7 +4,9 @@ const asyncHandler = require("express-async-handler");
 exports.addSkill = asyncHandler(async (req, res) => {
 	const skillData = { ...req.body, employee: req.params.employeeId };
 	const skill = await skillService.addSkill(skillData);
-	res.status(201).json(skill);
+	res
+		.status(201)
+		.json({ data: skill, success: true, message: "Skill added successfully" });
 });
 
 exports.getSkillsByEmployee = asyncHandler(async (req, res) => {

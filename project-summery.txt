@@ -1,0 +1,65 @@
+
+Core HRM Models
+employeeModel.js: Core employee details and attributes.
+departmentModel.js: Company departments.
+designationModel.js: Employee designations and job roles.
+teamModel.js: Employee teams and assignments.
+Attendance and Payroll
+attendanceModel.js: Tracks daily attendance for employees.
+payrollModel.js: Manages payroll calculations and employee salaries.
+timesheetModel.js: Timesheets to log working hours for specific projects.
+Leave and Absence Management
+leaveModel.js: Defines different types of leaves.
+leaveRequestModel.js: Handles individual leave requests and approvals.
+Onboarding and Offboarding
+onboardingModel.js: Manages tasks and progress for new hires.
+offboardingModel.js: Tracks tasks for employees who are leaving the company.
+Training and Development
+trainingProgramModel.js: Defines training programs available to employees.
+trainingModel.js: Tracks specific training sessions.
+employeeTrainingProfileModel.js: Employee-specific training history and progress.
+learningPathModel.js: Structured paths for career and skill development.
+certificationModel.js: Tracks certifications employees earn.
+Compliance and Policy Management
+complianceModel.js: Compliance and regulatory requirements.
+policyModel.js: Stores company policies and acknowledgments.
+auditLogModel.js: Logs key actions for audit purposes.
+Performance and Career Development
+performanceReviewModel.js: Performance review records for employees.
+goalModel.js: Goal tracking for individual employees.
+objectiveModel.js: Objective and Key Results (OKRs) for team or company goals.
+careerPathModel.js: Career progression paths within the company.
+successionPlanModel.js: Plans for employee succession and potential successors.
+Health, Wellness, and Safety
+healthCheckinModel.js: Logs health check-ins, supporting wellness tracking.
+wellnessProgramModel.js: Company wellness programs and tracking.
+safetyTrainingModel.js: Tracks employee safety training and certifications.
+incidentModel.js: Logs workplace incidents for safety and compliance.
+Surveys, Feedback, and Recognition
+surveyModel.js: Employee surveys and polls.
+pulseSurveyModel.js: Quick surveys for frequent employee feedback.
+responseModel.js: Stores responses to surveys and polls.
+feedbackModel.js: Feedback from employees on various aspects.
+recognitionModel.js: Employee recognition for achievements.
+Documentation and Knowledge Base
+documentModel.js: Employee and company documents.
+documentVersionModel.js: Tracks versions of key documents.
+knowledgeArticleModel.js: Knowledge base articles and resources.
+Project and Task Management
+projectModel.js: Defines projects within the company.
+timesheetModel.js: Logs time spent on project-specific tasks.
+Notifications and Engagement
+notificationModel.js: Notifications for important alerts.
+noticeModel.js: Company-wide notices and updates.
+badgeModel.js: Badges awarded to employees for achievements.
+recognitionModel.js: Recognitions and awards given to employees.
+Skills and Development Tracking
+skillModel.js: Defines skills and competencies.
+trainingModel.js: Employee skill-based training programs.
+employeeTrainingProfileModel.js: Tracks training progress for each employee.
+Miscellaneous and Utilities
+userModel.js: General user management.
+postModel.js: Posts and comments for communication or discussion.
+applicantModel.js: Applicant tracking for recruitment.
+jobModel.js: Job postings for recruitment.
+commentModel.js: Comments and discussions related to various models.

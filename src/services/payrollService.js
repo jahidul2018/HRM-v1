@@ -4,7 +4,7 @@ const Employee = require("../models/employeeModel");
 const Designation = require("../models/designationModel");
 const payrollIntegration = require("../integrations/payrollIntegration");
 
-const Payroll = require("../models/payrollModel");
+// const Payroll = require("../models/payrollModel");
 const Attendance = require("../models/attendanceModel");
 const Expense = require("../models/expenseModel");
 

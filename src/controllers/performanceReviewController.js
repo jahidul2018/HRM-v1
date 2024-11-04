@@ -58,3 +58,45 @@ exports.getAllReviews = asyncHandler(async (req, res) => {
 	const reviews = await performanceReviewService.getAllReviews();
 	res.status(200).json(reviews);
 });
+
+// const performanceReviewService = require("../services/performanceReviewService");
+// const asyncHandler = require("express-async-handler");
+
+exports.createReview = asyncHandler(async (req, res) => {
+	const reviewData = {
+		...req.body,
+		reviewer: req.user._id,
+	};
+	const review = await performanceReviewService.createPerformanceReview(
+		reviewData
+	);
+	res.status(201).json(review);
+});
+
+exports.getReviewsByEmployee = asyncHandler(async (req, res) => {
+	const reviews =
+		await performanceReviewService.getPerformanceReviewsByEmployee(
+			req.params.employeeId
+		);
+	res.status(200).json(reviews);
+});
+
+exports.getReviewById = asyncHandler(async (req, res) => {
+	const review = await performanceReviewService.getPerformanceReviewById(
+		req.params.reviewId
+	);
+	res.status(200).json(review);
+});
+
+exports.updateReview = asyncHandler(async (req, res) => {
+	const updatedReview = await performanceReviewService.updatePerformanceReview(
+		req.params.reviewId,
+		req.body
+	);
+	res.status(200).json(updatedReview);
+});
+
+exports.deleteReview = asyncHandler(async (req, res) => {
+	await performanceReviewService.deletePerformanceReview(req.params.reviewId);
+	res.status(200).json({ message: "Performance review deleted successfully" });
+});

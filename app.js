@@ -1,20 +1,20 @@
 require("dotenv").config();
 const express = require("express");
-const connectDB = require("./config/database");
-const authRoutes = require("./routes/authRoutes");
-const postRoutes = require("./routes/postRoutes");
-const commentRoutes = require("./routes/commentRoutes");
-const employeeRoutes = require("./routes/employeeRoutes");
-const departmentRoutes = require("./routes/departmentRoutes");
-const teamRoutes = require("./routes/teamRoutes");
-const leaveRoutes = require("./routes/leaveRoutes");
-const payrollRoutes = require("./routes/payrollRoutes");
-const attendanceRoutes = require("./routes/attendanceRoutes");
-const designationRoutes = require("./routes/designationRoutes"); // Add designation routes
-const noticeRoutes = require("./routes/noticeRoutes"); // New notice routes
-const performanceReviewRoutes = require("./routes/performanceReviewRoutes"); // Import the new routes
-const goalRoutes = require("./routes/goalRoutes"); // Import goal routes
-const skillRoutes = require("./routes/skillRoutes"); // Import skill routes
+const connectDB = require("./src/config/database");
+const authRoutes = require("./src/routes/authRoutes");
+const postRoutes = require("./src/routes/postRoutes");
+const commentRoutes = require("./src/routes/commentRoutes");
+const employeeRoutes = require("./src/routes/employeeRoutes");
+const departmentRoutes = require("./src/routes/departmentRoutes");
+const teamRoutes = require("./src/routes/teamRoutes");
+const leaveRoutes = require("./src/routes/leaveRoutes");
+const payrollRoutes = require("./src/routes/payrollRoutes");
+const attendanceRoutes = require("./src/routes/attendanceRoutes");
+const designationRoutes = require("./src/routes/designationRoutes"); // Add designation routes
+const noticeRoutes = require("./src/routes/noticeRoutes"); // New notice routes
+const performanceReviewRoutes = require("./src/routes/performanceReviewRoutes"); // Import the new routes
+const goalRoutes = require("./src/routes/goalRoutes"); // Import goal routes
+const skillRoutes = require("./src/routes/skillRoutes"); // Import skill routes
 
 const app = express();
 connectDB();

@@ -1,7 +1,7 @@
 const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-
+const asyncHandler = require("express-async-handler");
 const speakeasy = require("speakeasy");
 const qrcode = require("qrcode");
 
