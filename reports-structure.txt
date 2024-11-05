@@ -1,0 +1,45 @@
+src
+├── config/
+├── controllers/
+│   └── report/
+│       ├── reportEmployeeDirectoryController.js
+│       ├── reportEmployeeProfileController.js
+│       ├── reportOnboardingOffboardingController.js
+│       ├── reportDailyAttendanceController.js
+│       ├── reportMonthlyAttendanceController.js
+│       ├── reportTimesheetController.js
+│       ├── reportAbsenteeismController.js
+│       ├── reportLeaveSummaryController.js
+│       ├── reportLeaveRequestController.js
+│       ├── reportLeaveUtilizationController.js
+│       ├── reportPayrollSummaryController.js
+│       └── reportOvertimeController.js
+├── routes/
+│   └── report/
+│       ├── reportEmployeeDirectoryRoute.js
+│       ├── reportEmployeeProfileRoute.js
+│       ├── reportOnboardingOffboardingRoute.js
+│       ├── reportDailyAttendanceRoute.js
+│       ├── reportMonthlyAttendanceRoute.js
+│       ├── reportTimesheetRoute.js
+│       ├── reportAbsenteeismRoute.js
+│       ├── reportLeaveSummaryRoute.js
+│       ├── reportLeaveRequestRoute.js
+│       ├── reportLeaveUtilizationRoute.js
+│       ├── reportPayrollSummaryRoute.js
+│       └── reportOvertimeRoute.js
+├── services/
+│   └── report/
+│       ├── reportEmployeeDirectoryService.js
+│       ├── reportEmployeeProfileService.js
+│       ├── reportOnboardingOffboardingService.js
+│       ├── reportDailyAttendanceService.js
+│       ├── reportMonthlyAttendanceService.js
+│       ├── reportTimesheetService.js
+│       ├── reportAbsenteeismService.js
+│       ├── reportLeaveSummaryService.js
+│       ├── reportLeaveRequestService.js
+│       ├── reportLeaveUtilizationService.js
+│       ├── reportPayrollSummaryService.js
+│       └── reportOvertimeService.js
+└── app.js

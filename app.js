@@ -16,6 +16,20 @@ const performanceReviewRoutes = require("./src/routes/performanceReviewRoutes");
 const goalRoutes = require("./src/routes/goalRoutes"); // Import goal routes
 const skillRoutes = require("./src/routes/skillRoutes"); // Import skill routes
 
+// reports
+const employeeDirectoryRoutes = require("./src/routes/reports/reportEmployeeDirectoryRoute");
+const employeeProfileRoutes = require("./src/routes/reports/reportEmployeeProfileRoute");
+const onboardingOffboardingRoutes = require("./src/routes/reports/reportOnboardingOffboardingRoute");
+const dailyAttendanceRoutes = require("./src/routes/reports/reportDailyAttendanceRoute");
+const monthlyAttendanceRoutes = require("./src/routes/reports/reportMonthlyAttendanceRoute");
+const timesheetRoutes = require("./src/routes/reports/reportTimesheetRoute");
+const absenteeismRoutes = require("./src/routes/reports/reportAbsenteeismRoute");
+const leaveSummaryRoutes = require("./src/routes/reports/reportLeaveSummaryRoute");
+const leaveRequestRoutes = require("./src/routes/reports/reportLeaveRequestRoute");
+const leaveUtilizationRoutes = require("./src/routes/reports/reportLeaveUtilizationRoute");
+const payrollSummaryRoutes = require("./src/routes/reports/reportPayrollSummaryRoute");
+const overtimeRoutes = require("./src/routes/reports/reportOvertimeRoute");
+
 const app = express();
 connectDB();
 
@@ -35,5 +49,19 @@ app.use("/api/notices", noticeRoutes); // Add notice routes
 app.use("/api/performance-reviews", performanceReviewRoutes); // Register the new route
 app.use("/api/goals", goalRoutes); // Register the goal routes
 app.use("/api/skills", skillRoutes); // Register the skill routes
+
+// Report routes organized under `/api/reports/`
+app.use("/api/reports/employee-directory", employeeDirectoryRoutes);
+app.use("/api/reports/employee-profile", employeeProfileRoutes);
+app.use("/api/reports/onboarding-offboarding", onboardingOffboardingRoutes);
+app.use("/api/reports/daily-attendance", dailyAttendanceRoutes);
+app.use("/api/reports/monthly-attendance-summary", monthlyAttendanceRoutes);
+app.use("/api/reports/timesheet", timesheetRoutes);
+app.use("/api/reports/absenteeism", absenteeismRoutes);
+app.use("/api/reports/leave-summary", leaveSummaryRoutes);
+app.use("/api/reports/leave-requests", leaveRequestRoutes);
+app.use("/api/reports/leave-utilization", leaveUtilizationRoutes);
+app.use("/api/reports/payroll-summary", payrollSummaryRoutes);
+app.use("/api/reports/overtime", overtimeRoutes);
 
 module.exports = app;
